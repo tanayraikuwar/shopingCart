@@ -7,7 +7,7 @@ It is a simple single page web application which mimics the user behavior of cho
 ## Features
 
 - Here we mimic the user behaviour when he visit any E-commerce website.
-- product to the cart.
+- Add product to the cart.
 - Go to select address.
 - Select address from three addresses.
 - Add credit card details for payment.
