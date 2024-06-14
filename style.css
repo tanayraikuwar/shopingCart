@@ -1,0 +1,101 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* CSS code for Home page */
+
+.item-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 45vw;
+}
+
+.main-container.active {
+  display: flex;
+  transform-origin: top;
+  animation: animate 0.5s;
+}
+
+.table-striped th {
+  text-align: center;
+}
+
+.table-striped td {
+  text-align: center;
+}
+
+/* CSS for Shipping and Payment section */
+
+.paymentSection {
+  display: none;
+}
+
+.paymentSection.active {
+  display: block;
+  transform-origin: top;
+  animation: animate 0.5s;
+}
+
+.section-heading {
+  height: 60px;
+}
+
+.sections-Address {
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  padding: 5px 10px;
+  margin-bottom: 50px;
+}
+
+.section-creditCard {
+  display: none;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+
+.section-creditCard.active {
+  display: block;
+  transform-origin: right;
+  animation: animate 0.5s;
+}
+
+#creditForm input {
+  margin-bottom: 20px;
+}
+
+/* CSS for successfull payment section */
+
+.paymentSuccess {
+  display: none;
+}
+
+.paymentSuccess.active {
+  display: block;
+  transform-origin: bottom;
+  animation: animate 0.5s;
+}
+
+/* Keyframes for animations */
+
+@keyframes animate {
+  from {
+    transform: scale(1, 0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
